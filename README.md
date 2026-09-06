@@ -189,7 +189,7 @@ This repository is a **portfolio artifact**, not a deployable package — it doc
 
 **Built by :**
 - [Anshul](https://github.com/morid648) 
-- · [LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-508138308/)
+- [LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-508138308/)
 
 ---
 
