@@ -187,6 +187,10 @@ This repository is a **portfolio artifact**, not a deployable package — it doc
 - Medallion architecture implementation
 - Automated Power BI refresh scheduling
 
+**Built by :**
+- [Anshul](https://github.com/morid648) 
+- · [LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-508138308/)
+
 ---
 
 *This is an independent portfolio project built to demonstrate applied data engineering skills. The underlying scenario ("CarePlus") and source dataset originate from a Codebasics data engineering course exercise; the original dataset is not redistributed here — see [`sample-data/README.md`](sample-data/README.md).*
