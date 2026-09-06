@@ -1,0 +1,13 @@
+# Environment variables / secrets
+.env
+*.env
+!sample.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

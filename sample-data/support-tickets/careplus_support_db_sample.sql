@@ -1,0 +1,31 @@
+-- Sample seed script for careplus_support_db (synthetic data — NOT the original course dataset)
+CREATE DATABASE IF NOT EXISTS careplus_support_db;
+USE careplus_support_db;
+
+CREATE TABLE IF NOT EXISTS support_tickets (
+    ticket_id         VARCHAR(50),
+    created_at        DATETIME,
+    resolved_at       DATETIME,
+    agent             VARCHAR(100),
+    priority          VARCHAR(20),
+    issue_category    VARCHAR(100),
+    num_interactions  INT,
+    status            VARCHAR(20),
+    channel           VARCHAR(50)
+);
+
+INSERT INTO support_tickets
+  (ticket_id, created_at, resolved_at, agent, priority, issue_category, num_interactions, status, channel)
+VALUES
+  ('TCK0701000', '2025-07-01 21:59:00', '2025-07-02 23:47:00', 'Kavya', 'Low', 'Login Issue', 3, 'Resolved', 'Email'),
+  ('TCK0701001', '2025-07-01 23:55:00', NULL, 'Sneha', 'Low', 'Account Locked', 7, 'Open', 'Email'),
+  ('TCK0701002', '2025-07-01 02:31:00', '2025-07-01 10:57:00', 'Sneha', 'High', 'Bug Report', 9, 'Resolved', 'Chat'),
+  ('TCK0701003', '2025-07-02 00:20:00', NULL, 'Rohit', 'Low', 'Payment Failure', 5, 'Open', 'Email'),
+  ('TCK0701004', '2025-07-01 08:16:00', '2025-07-01 20:22:00', 'Kavya', 'Low', 'Login Issue', 6, 'Resolved', 'Email'),
+  ('TCK0701005', '2025-07-01 06:39:00', '2025-07-01 19:24:00', 'Kavya', 'High', 'Feature Request', 1, 'Resolved', 'Web Form'),
+  ('TCK0701006', '2025-07-01 22:28:00', '2025-07-03 06:26:00', 'Rohit', 'Low', 'Account Locked', 5, 'Resolved', 'Phone'),
+  ('TCK0701007', '2025-07-02 00:32:00', '2025-07-02 03:24:00', 'Ananya', 'High', 'Login Issue', 5, 'Resolved', 'Email'),
+  ('TCK0701008', '2025-07-01 13:26:00', NULL, 'Rohit', 'Medium', 'Payment Failure', 6, 'Open', 'Chat'),
+  ('TCK0701009', '2025-07-01 18:48:00', '2025-07-02 18:10:00', 'Kavya', 'High', 'Bug Report', 3, 'Resolved', 'Chat'),
+  ('TCK0701010', '2025-07-01 12:24:00', '2025-07-01 22:06:00', 'Sneha', 'Low', 'Feature Request', 1, 'Resolved', 'Chat'),
+  ('TCK0701011', '2025-07-01 08:35:00', NULL, 'Rohit', 'Medium', 'Bug Report', 4, 'Open', 'Phone');
